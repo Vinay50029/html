@@ -30,7 +30,7 @@ body {
 
 .aboutbmw {
     height: 110vh;
-    background-image: url('../images/bmw pro2.jpg');
+    background-image: url('bmw pro2.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +137,7 @@ body {
 
 .m {
     height: 110vh;
-    background-image: url('../images/bmw pro1.jpg');
+    background-image: url('bmw pro1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -238,7 +238,7 @@ body {
 .carinfo {
     height: 100vh;
     width: auto;
-    background-image: url('../images/bmw back.jpg');
+    background-image: url('bmw back.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -273,7 +273,7 @@ body {
     padding-top: 4vh;
     padding-left: 2vh;
     padding-right: 2vh;
-    background-image: url('../../images/blueandred.jpg');
+    background-image: url('../blueandred.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ body {
 .partsofcar {
     height: 300vh;
     width: auto;
-    background-image: url('../images/bmw design 1.jpg');
+    background-image: url('bmw design 1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
