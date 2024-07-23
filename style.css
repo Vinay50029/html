@@ -389,14 +389,14 @@ body {
 }
 .matter1 {
     visibility: hidden;
-    width: 130vh;
+    width: 40vh;
     height: 25vh;
     background-color: rgba(91, 161, 30, 0.756);
     color: #fff;
     border-radius: 5px;
     padding: 10px;
     position: absolute;
-    bottom: 37.8vh;
+    bottom: 80vh;
     left: 65vh;
     transform: translateX(-50%);
     z-index: 2;
