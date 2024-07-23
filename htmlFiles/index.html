@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW M4 3T Evo</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+</head>
+
+<body>
+    <div class="tabs is-centered">
+        <ul>
+            <li class="is-active"><a><button>HOME</button></a></li>
+            <li><a><button>MAGAZINE</button></a></li>
+            <li><a><button>TEST DRIVE</button></a></li>
+            <li><a><button>CONTACT US</button></a></li>
+        </ul>
+    </div>
+    <section class="mainpic">
+        <div>
+            <img class="pic" src="../images/bmw twin cars.jpg" alt="begginer">
+        </div>
+    </section>
+    <section class="aboutbmw">
+        <div class="logo-container">
+            <img class="logo" src="../images/bmw logo.jpg" alt="logo">
+            <div class="tooltip">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.
+            </div>
+
+            <div class="tooltip2">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.
+            </div>
+        </div>
+    </section>
+
+    <section class="m">
+        <div class="m-container2">
+            <img class="mpic" src="../images/mlogo.jpg" alt="mpic">
+            <div class="text1">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+
+            <div class="text2">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+        </div>
+    </section>
+
+    <section class="carinfo">
+        <div class="container">
+            <section class="section is-medium">
+                <h1 class="title">Large section</h1>
+                <h2 class="subtitle">
+                    A simple container to divide your page into <strong>sections</strong>, like
+                    the one you're currently reading.
+                </h2>
+            </section>
+        </div>
+    </section>
+
+    <section class="carslides">
+        <div class="slideshow-container">
+            <!-- Slides -->
+            <div class="slides">
+                <img class="firstpic" src="../images/bmw main front view.webp" alt="Image 1">
+            </div>
+
+            <div class="slides">
+                <img class="secondpic" src="../images/bmw fa view.webp" alt="Image 2">
+            </div>
+
+            <div class="slides">
+                <img class="thirdpic" src="../images/bmw main side view.webp" alt="Image 3">
+            </div>
+
+            <div class="slides">
+                <img class="fourthpic" src="../images/bmw ba view.webp" alt="Image 4">
+            </div>
+
+            <div class="slides">
+                <img class="fourthpic" src="../images/bmw main back view.webp" alt="Image 4">
+            </div>
+
+            <div class="slides">
+                <img class="fourthpic" src="../images/bmw main top view.webp" alt="Image 4">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <!-- The dots/circles -->
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <section class="partsofcar">
+        <div class="center">
+             <div class="hl"> 
+                <img class="headlight" src="../images/bmw head light.webp" alt="headlight">
+                 <div class="matter1">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> 
+            <!-- <div class="wl"> -->
+                <img class="wheel" src="../images/bmw wheel.jpg" alt="wheel">
+                <!-- <div class="matter2">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+            <!-- <div class="bl"> -->
+                <img class="backlight" src="../images/bmw back light main.jpg" alt="backlight">
+                <!-- <div class="matter3">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+            <!-- <div class="eg"> -->
+                <img class="engine" src="../images/bmw engine main.jpg" alt="engine">
+                <!-- <div class="matter4">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+            <!-- <div class="pt"> -->
+                <img class="poster" src="../images/bmw poster main.jpg" alt="poster">
+                <!-- <div class="matter5">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+            <!-- <div class="ad"> -->
+                <img class="aerodynmics" src="../images/bmw back aerodynmics.webp" alt="aerodynmics">
+                <!-- <div class="matter6">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+            <!-- <div class="it"> -->
+                <img class="interior" src="../images/bmw interior main.jpg" alt="interior">
+                <!-- <div class="matter7">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+            <!-- <div class="sm"> -->
+                <img class="sidemirror" src="../images/bmw side mirror.webp" alt="sidemirror">
+                <!-- <div class="matter8">BMW stands for Bayerische Motoren Werke, known for luxury vehicles and motorcycles.</div>
+            </div> -->
+        </div>
+    </section>
+
+    <section class="video">
+        <iframe width="12600px" height="900px"
+            src="https://www.youtube.com/embed/E0jfxQq_gcw?si=M1ZbMifffHluDijI&amp;controls=0&autoplay=1&mute=1&loop=1&playlist=E0jfxQq_gcw"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </section>
+
+    <section class="mapspage">
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.8962157515907!2d78.4544765746276!3d17.416767601959183!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9748c3562c1d%3A0x963e18e37684319f!2sBMW%20KUN%20Exclusive%20in%20Hyderabad!5e0!3m2!1sen!2sin!4v1721652513247!5m2!1sen!2sin"
+                width="730px" height="580px" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <section class="end">
+        <div class="container">
+            <p>&copy; 2024 Luxury and Performance: The Legacy of BMW Group</p>
+            <ul>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+
+</html>

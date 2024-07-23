@@ -1,0 +1,512 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.tabs {
+    height: 90px;
+    background-attachment: fixed;
+    background-color: #120238b7;
+}
+
+.tabs is-centered {
+    height: 118.5vh;
+    width: auto;
+}
+
+
+
+.mainpic {
+    height: 118.5vh;
+    width: auto;
+}
+
+.pic {
+    width: 300vh;
+}
+
+
+
+.aboutbmw {
+    height: 110vh;
+    background-image: url('../images/bmw pro2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+    /*height: 100%;
+    width: 100%;
+    z-index: 1;*/
+
+}
+
+.logo {
+    width: 60vh;
+    border: 0.9vh solid;
+    border-color: rgb(106, 7, 7);
+    border-radius: 100%;
+    z-index: 1;
+}
+
+.logo-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 56vh;
+    /* Adjust the width as needed */
+    height: 40vh;
+    background-color: rgba(22, 38, 8, 0.756);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 37vh;
+    /* Position above the logo */
+    right: 38vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    /* Start with opacity 0 */
+    transition: opacity 2s, visibility 2s;
+}
+
+.logo-container:hover .tooltip {
+    visibility: visible;
+    opacity: 5;
+    /* Fade in the tooltip */
+    transition-delay: 1s;
+    /* Ensure it appears immediately on hover */
+}
+
+.logo-container .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 1s;
+    /* Ensure it disappears smoothly */
+}
+
+.tooltip2 {
+    visibility: hidden;
+    width: 56vh;
+    /* Adjust the width as needed */
+    height: 40vh;
+    background-color: rgba(41, 58, 26, 0.756);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0vh;
+    /* Position above the logo */
+    left: 94vh;
+    top: 34vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    /* Start with opacity 0 */
+    transition: opacity 2s, visibility 2s;
+}
+
+.logo-container:hover .tooltip2 {
+    visibility: visible;
+    opacity: 5;
+    /* Fade in the tooltip */
+    transition-delay: 2s;
+    /* Ensure it appears immediately on hover */
+}
+
+.logo-container .tooltip2 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 2s;
+    /* Ensure it disappears smoothly */
+}
+
+
+
+.m {
+    height: 110vh;
+    background-image: url('../images/bmw pro1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+    /*height: 100%;
+    width: 100%;
+    z-index: 1;*/
+}
+
+.mpic {
+    width: 60vh;
+    border: 0.9vh solid;
+    border-color: rgb(133, 68, 68);
+    border-radius: 15%;
+    z-index: 1;
+}
+
+.m-container2 {
+    position: relative;
+    display: inline-block;
+}
+
+.text1 {
+    visibility: hidden;
+    width: 130vh;
+    height: 25vh;
+    background-color: rgba(78, 120, 41, 0.756);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 37.8vh;
+    left: 65vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+.m-container2:hover .text1 {
+    visibility: visible;
+    opacity: 5;
+    transition-delay: 1s;
+}
+
+.m-container2 .text1 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.text2 {
+    visibility: hidden;
+    width: 130vh;
+    /* Adjust the width as needed */
+    height: 25vh;
+    background-color: rgba(99, 107, 92, 0.756);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 0vh;
+    /* Position above the logo */
+    left: -5vh;
+    top: 37vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    /* Start with opacity 0 */
+    transition: opacity 2s, visibility 2s;
+}
+
+.m-container2:hover .text2 {
+    visibility: visible;
+    opacity: 5;
+    /* Fade in the tooltip */
+    transition-delay: 2s;
+    /* Ensure it appears immediately on hover */
+}
+
+.m-container2 .text2 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 2s;
+    /* Ensure it disappears smoothly */
+}
+
+
+
+.carinfo {
+    height: 100vh;
+    width: auto;
+    background-image: url('../images/bmw back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.container {
+    border: 7vh solid;
+    border-color: rgb(151, 92, 14);
+}
+
+
+
+/* {
+    box-sizing: border-box;
+}*/
+.slideshow-container {
+    position: relative;
+    max-width: 1100px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carslides {
+    height: 100vh;
+    padding-top: 4vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    background-image: url('../../images/blueandred.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.slides {
+    display: none;
+    width: 280vh;
+    height: 660px;
+}
+
+.slideshow-container img {
+    width: 55%;
+    height: 660px;
+    border-radius: 10vh 0 0 10vh;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 10px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 28px;
+    transition: 0.7s ease;
+    border-radius: 0 19px 19px 0;
+    user-select: none;
+    background-color: #000000;
+}
+
+.next {
+    right: 0;
+    border-radius: 19px 0 0 19px;
+}
+
+.next:hover {
+    background-color: rgba(102, 11, 4, 0.8);
+}
+
+.prev:hover {
+    background-color: #1c036c;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 5.5px;
+    background: opacity;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+    height: 6vh;
+    width: auto;
+    position: relative;
+    bottom: 7vh;
+
+}
+
+.dot {
+    cursor: pointer;
+    height: 17px;
+    width: 17px;
+    margin: 1vh 0.2vh;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #ffffff;
+
+}
+
+
+
+.partsofcar {
+    height: 300vh;
+    width: auto;
+    background-image: url('../images/bmw design 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.headlight {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    bottom: 36vh;
+    right: 9vh;
+    z-index: 1;
+}
+.hl,.wi,.bl,.eg,.pt,.ad,.it,.sm {
+    position: relative;
+    display: inline-block;
+}
+.matter1 {
+    visibility: hidden;
+    width: 130vh;
+    height: 25vh;
+    background-color: rgba(91, 161, 30, 0.756);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 37.8vh;
+    left: 65vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+.hl:hover .matter1, .wl:hover .matter2, .bl:hover .matter, .eg:hover .matter, .pt:hover .matter, .ad:hover .matter, .it:hover .matter, .sm:hover .matter{
+    visibility: visible;
+    opacity: 5;
+    transition-delay: 1s;
+}
+
+.hl .matter, .wl .matter, .bl .matter, .eg .matter, .pt .matter, .ad .matter, .it .matter, .sm .matter {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.wheel {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    top: 15vh;
+    z-index: 1;
+}
+
+.backlight {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    bottom: 34vh;
+    left: 10vh;
+}
+
+.engine {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    top: 45vh;
+    right: 4vh;
+}
+
+.poster {
+    height: 115vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    top: 45vh;
+    left: 1vh;
+}
+
+.aerodynmics {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    bottom: 50vh;
+    right: 139vh;
+}
+
+.interior {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    bottom: 94vh;
+    left: 99.9vh;
+}
+
+.sidemirror {
+    height: 45vh;
+    width: auto;
+    border: 1vh solid red;
+    position: relative;
+    bottom: 1vh;
+    left: 47.9vh;
+}
+
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.mapspage {
+    height: 100vh;
+    width: auto;
+}
+
+.map {
+    position: relative;
+    top: 10vh;
+    left: 10vh;
+}
+
+
+.end {
+    height: 20vh;
+}
+
+.container {
+    color: #fffcfc;
+    text-align: center;
+    border-bottom-width: 0vh;
+    border-right-width: 0vh;
+    border-left-width: 0vh;
+    border-top-width: 0vh;
+}
