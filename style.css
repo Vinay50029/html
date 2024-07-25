@@ -1,7 +1,18 @@
-body {
-    font-family: Arial, sans-serif;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ensure consistent font rendering */
 }
 
 .tabs {
@@ -16,7 +27,6 @@ body {
 }
 
 
-
 .mainpic {
     height: 118.5vh;
     width: auto;
@@ -25,7 +35,6 @@ body {
 .pic {
     width: 300vh;
 }
-
 
 
 .aboutbmw {
@@ -49,10 +58,10 @@ body {
 
 .logo {
     width: 60vh;
-    border: 0.9vh solid;
-    border-color: rgb(106, 7, 7);
+    border: 1vh ;
     border-radius: 100%;
     z-index: 1;
+    box-shadow: 3px 3px 3px rgb(122, 122, 198), -1px -1px 20px rgb(169, 103, 103);
 }
 
 .logo-container {
@@ -62,75 +71,138 @@ body {
 
 .tooltip {
     visibility: hidden;
-    width: 56vh;
-    /* Adjust the width as needed */
-    height: 40vh;
-    background-color: rgba(22, 38, 8, 0.756);
+    width: 72vh;
+    height: 45vh;
     color: #fff;
     text-align: center;
     border-radius: 5px;
     padding: 10px;
     position: absolute;
-    bottom: 37vh;
-    /* Position above the logo */
-    right: 38vh;
+    bottom: 33vh;
+    right: 28vh;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 0;
-    /* Start with opacity 0 */
     transition: opacity 2s, visibility 2s;
 }
 
 .logo-container:hover .tooltip {
     visibility: visible;
     opacity: 5;
-    /* Fade in the tooltip */
     transition-delay: 1s;
-    /* Ensure it appears immediately on hover */
+   
 }
 
 .logo-container .tooltip {
     visibility: hidden;
     opacity: 0;
     transition-delay: 1s;
-    /* Ensure it disappears smoothly */
 }
 
 .tooltip2 {
     visibility: hidden;
-    width: 56vh;
-    /* Adjust the width as needed */
-    height: 40vh;
-    background-color: rgba(41, 58, 26, 0.756);
+    width: 70vh;
+    height: 45vh;
     color: #fff;
     text-align: center;
     border-radius: 5px;
     padding: 10px;
     position: absolute;
-    bottom: 0vh;
-    /* Position above the logo */
-    left: 94vh;
-    top: 34vh;
+    bottom: 10vh;
+    left: 99vh;
+    top: 33vh;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 0;
-    /* Start with opacity 0 */
     transition: opacity 2s, visibility 2s;
 }
 
 .logo-container:hover .tooltip2 {
     visibility: visible;
-    opacity: 5;
-    /* Fade in the tooltip */
+    opacity: 5;  
     transition-delay: 2s;
-    /* Ensure it appears immediately on hover */
 }
 
 .logo-container .tooltip2 {
     visibility: hidden;
     opacity: 0;
     transition-delay: 2s;
-    /* Ensure it disappears smoothly */
+}
+
+.bmwfont {
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 1;
+    font-style: normal;
+    font-size: 3vh;
+  }
+
+
+
+.tooltip3 {
+    visibility: hidden;
+    width: 50vh;
+    height:1vh;
+    color: #fff;
+    background-color: #007bff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 9.5vh;
+    right: 53vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+.logo-container:hover .tooltip3 {
+    visibility: visible;
+    opacity: 5;  
+    transition-delay: 3s;
+}
+
+.logo-container .tooltip3 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 3s;
+}
+
+.tooltip4 {
+    visibility: hidden;
+    background-color: #cd1212;
+    width: 0.001vh;
+    height: 38vh;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 35vh;
+    left: 90vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+.logo-container:hover .tooltip4 {
+    visibility: visible;
+    opacity: 5;  
+    transition-delay: 4s;
+}
+
+.logo-container .tooltip4 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 4s;
+}
+.bmwfont2 {
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 6vh;
+    align-items: center;
 }
 
 
@@ -148,17 +220,14 @@ body {
     color: white;
     text-align: center;
     background-attachment: fixed;
-    /*height: 100%;
-    width: 100%;
-    z-index: 1;*/
 }
 
 .mpic {
     width: 60vh;
-    border: 0.9vh solid;
-    border-color: rgb(133, 68, 68);
+    border: 1vh ;
     border-radius: 15%;
     z-index: 1;
+    box-shadow: 3px 3px 3px rgb(80, 80, 191), -2px -2px 30px rgb(153, 59, 59);
 }
 
 .m-container2 {
@@ -168,16 +237,15 @@ body {
 
 .text1 {
     visibility: hidden;
-    width: 130vh;
+    width: 140vh;
     height: 25vh;
-    background-color: rgba(78, 120, 41, 0.756);
     color: #fff;
     text-align: center;
     border-radius: 5px;
     padding: 10px;
     position: absolute;
-    bottom: 37.8vh;
-    left: 65vh;
+    bottom: 44.8vh;
+    left: 70vh;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 0;
@@ -198,45 +266,104 @@ body {
 
 .text2 {
     visibility: hidden;
-    width: 130vh;
-    /* Adjust the width as needed */
+    width: 150vh;
     height: 25vh;
-    background-color: rgba(99, 107, 92, 0.756);
     color: #fff;
     text-align: center;
     border-radius: 5px;
     padding: 10px;
     position: absolute;
     bottom: 0vh;
-    /* Position above the logo */
-    left: -5vh;
+    left: -8vh;
     top: 37vh;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 0;
-    /* Start with opacity 0 */
     transition: opacity 2s, visibility 2s;
 }
 
 .m-container2:hover .text2 {
     visibility: visible;
     opacity: 5;
-    /* Fade in the tooltip */
     transition-delay: 2s;
-    /* Ensure it appears immediately on hover */
 }
 
 .m-container2 .text2 {
     visibility: hidden;
     opacity: 0;
     transition-delay: 2s;
-    /* Ensure it disappears smoothly */
+}
+.bmwfont {
+    font-family: "Ga Maamli", sans-serif;
+    font-weight: 0.1;
+    font-style: normal;
+    font-size: 3vh;
+  }
+
+
+.text3 {
+    visibility: hidden;
+    width: 1vh;
+    height: 55vh;
+    background-color: rgba(27, 18, 128, 0.756);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    right: 125vh;
+    bottom: 13vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+.m-container2:hover .text3 {
+    visibility: visible;
+    opacity: 5;
+    transition-delay: 3s;
+}
+
+.m-container2 .text3 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 3s;
+}
+
+.text4 {
+    visibility: hidden;
+    width: 50vh;
+    height: 1vh;
+    background-color: rgba(65, 156, 136, 0.756);
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 23.8vh;
+    left: 110vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+.m-container2:hover .text4 {
+    visibility: visible;
+    opacity: 5;
+    transition-delay: 4s;
+}
+
+.m-container2 .text4 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 4s;
 }
 
 
-
 .carinfo {
-    height: 100vh;
+    height: 120vh;
     width: auto;
     background-image: url('bmw back.jpg');
     background-size: cover;
@@ -253,10 +380,17 @@ body {
 
 .container {
     border: 7vh solid;
-    border-color: rgb(151, 92, 14);
+    margin-right: 0px;
+    margin-left: 0px;
+    border-top: 0vh;
 }
 
-
+.section is-medium{
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 60px;
+    padding-bottom: 0px;  
+}
 
 /* {
     box-sizing: border-box;
@@ -288,18 +422,19 @@ body {
     display: none;
     width: 280vh;
     height: 660px;
+    
 }
 
 .slideshow-container img {
     width: 55%;
     height: 660px;
-    border-radius: 10vh 0 0 10vh;
 }
 
 .prev,
 .next {
     cursor: pointer;
     position: absolute;
+    right: 10;
     top: 50%;
     width: auto;
     padding: 10px;
@@ -315,6 +450,7 @@ body {
 
 .next {
     right: 0;
+    right: 4.2vh;
     border-radius: 19px 0 0 19px;
 }
 
@@ -335,7 +471,8 @@ body {
     height: 6vh;
     width: auto;
     position: relative;
-    bottom: 7vh;
+    bottom: 4.3vh;
+   right: 3.9vh;
 
 }
 
@@ -377,39 +514,41 @@ body {
 .headlight {
     height: 45vh;
     width: auto;
-    border: 1vh solid red;
+    border: 1vh ;
     position: relative;
-    bottom: 36vh;
+    bottom: 35vh;
     right: 9vh;
     z-index: 1;
+    border: 1px ;
+    padding: 20px;
+    box-shadow: 18px 18px 18px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
-.hl,.wi,.bl,.eg,.pt,.ad,.it,.sm {
+.hl,.wl,.bl,.eg,.pt,.ad,.it,.sm {
     position: relative;
     display: inline-block;
 }
 .matter1 {
     visibility: hidden;
-    width: 40vh;
-    height: 25vh;
-    background-color: rgba(91, 161, 30, 0.756);
+    width: 60vh;
+    height: 45vh;
     color: #fff;
     border-radius: 5px;
     padding: 10px;
     position: absolute;
-    bottom: 80vh;
-    left: 65vh;
+    top: 15vh;
+    left: 20.3vh;
     transform: translateX(-50%);
     z-index: 2;
     opacity: 0;
     transition: opacity 2s, visibility 2s;
 }
-.hl:hover .matter1, .wl:hover .matter2, .bl:hover .matter, .eg:hover .matter, .pt:hover .matter, .ad:hover .matter, .it:hover .matter, .sm:hover .matter{
+.hl:hover .matter1, .wl:hover .matter2, .bl:hover .matter3, .eg:hover .matter4, .pt:hover .matter5, .ad:hover .matter8, .it:hover .matter7, .sm:hover .matter6{
     visibility: visible;
     opacity: 5;
     transition-delay: 1s;
 }
 
-.hl .matter, .wl .matter, .bl .matter, .eg .matter, .pt .matter, .ad .matter, .it .matter, .sm .matter {
+.hl .matter1, .wl .matter2, .bl .matter3, .eg .matter4, .pt .matter5, .ad .matter8, .it .matter7, .sm .matter6 {
     visibility: hidden;
     opacity: 0;
     transition-delay: 1s;
@@ -418,64 +557,155 @@ body {
 .wheel {
     height: 45vh;
     width: auto;
-    border: 1vh solid red;
+    border: 1vh ;
     position: relative;
     top: 15vh;
     z-index: 1;
+    padding: 10px;
+    box-shadow: 20px 20px 20px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
+}
+.matter2 {
+    visibility: hidden;
+    width: 55vh;
+    height: 45vh;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    bottom: 35vh;
+    left: 22.3vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
 }
 
 .backlight {
     height: 45vh;
     width: auto;
-    border: 1vh solid red;
+    border: 1vh ;
     position: relative;
     bottom: 34vh;
     left: 10vh;
+    padding: 20px;
+    box-shadow: 18px 18px 18px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
+}
+.matter3 {
+    visibility: hidden;
+    width: 57vh;
+    height: 45vh;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 15vh;
+    left: 40vh;
+    transform: translateX(-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
 }
 
 .engine {
     height: 45vh;
-    width: auto;
-    border: 1vh solid red;
+    width: 57vh;
+    border: 1vh ;
     position: relative;
-    top: 45vh;
-    right: 4vh;
+    top: 54.5vh;
+    right: 6.2vh;
+    padding: 20px;
+    box-shadow: 16px 16px 16px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
+}
+.matter4 {
+    visibility: hidden;
+    width: 104vh;
+    height: 30vh;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    transform: translateX(90%);
+    top: 103vh;
+    right: 53vh; 
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
 }
 
 .poster {
-    height: 115vh;
+    height: 119vh;
     width: auto;
-    border: 1vh solid red;
+    border: 1vh ;
     position: relative;
-    top: 45vh;
-    left: 1vh;
-}
+    top: 54vh;
+    right: 0vh;
+    left: 0vh;
 
-.aerodynmics {
-    height: 45vh;
-    width: auto;
-    border: 1vh solid red;
-    position: relative;
-    bottom: 50vh;
-    right: 139vh;
-}
-
-.interior {
-    height: 45vh;
-    width: auto;
-    border: 1vh solid red;
-    position: relative;
-    bottom: 94vh;
-    left: 99.9vh;
+    box-shadow: 15px 15px 15px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
 
 .sidemirror {
     height: 45vh;
-    width: auto;
-    border: 1vh solid red;
+    width: 59vh;
+    border: 1vh ;
     position: relative;
-    bottom: 1vh;
-    left: 47.9vh;
+    bottom: 94vh;
+    right: 103vh;
+    padding: 10px;
+    box-shadow: 15px 15px 15px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
+}
+.matter6 {
+    visibility: hidden;
+    width: 55vh;
+    height: 47vh;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    transform: translateX(-184.7%);
+    bottom: 47vh; 
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+
+.interior {
+    height: 45vh;
+    width: 58vh;
+    border: 1vh ;
+    position: relative;
+    bottom: 94vh;
+    left: 102vh;
+    padding: 15px;
+    box-shadow: 15px 15px 15px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
+}
+.matter7 {
+    visibility: hidden;
+    width: 55vh;
+    height: 48vh;
+    
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    transform: translateX(185.9%);
+    bottom: 43.5vh;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 2s, visibility 2s;
+}
+
+
+ .aerodynmics {   
+    height: 44vh;
+    width: auto; 
+    border: 1vh ;
+    position: relative;
+    top: 54vh;
+    left: 5.6vh;
+    padding: 20px;
+    box-shadow: 16px 16px 16px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);  
 }
 
 
@@ -487,26 +717,266 @@ body {
 
 
 .mapspage {
-    height: 100vh;
+    height: 130vh;
     width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    background-image: url("location2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    text-align: center;
+}
+
+.map-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgb(188, 188, 188);
+}
+
+
+.map-container h1 {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.map-wrapper {
+    position: relative;
+    width: 100%;
+    height: 580px;
 }
 
 .map {
-    position: relative;
-    top: 10vh;
-    left: 10vh;
+    width: 100%;
+    height: 100%;
 }
+
+.overlay {
+    position: absolute;
+    bottom: 73vh;
+    right: 66vh;
+    width: 77px;
+    height: 60px;
+    background: white;
+    z-index: 2;
+}
+
+.location-info {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.location-info h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.location-info p {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #666;
+}
+
+.location-info button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.location-info button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .map-container {
+        padding: 10px;
+    }
+
+    .map-container h2 {
+        font-size: 20px;
+    }
+
+    .map-container p,
+    .location-info p {
+        font-size: 14px;
+    }
+
+    .location-info button {
+        font-size: 14px;
+    }
+
+    .map {
+        height: 300px;
+    }
+}
+
 
 
 .end {
     height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
-    color: #fffcfc;
+
     text-align: center;
-    border-bottom-width: 0vh;
-    border-right-width: 0vh;
-    border-left-width: 0vh;
-    border-top-width: 0vh;
+    border-color: #1a1818;
+    border-bottom: 0vh;
+    border-left: 0vh;
+    border-right: 0vh;
+}
+
+.container p { 
+    font-size: 16px;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0 0 0;
+}
+
+.container ul li {
+    display: inline;
+}
+
+.container ul li a {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+
+.about-creator {
+    background-color: #000000;
+    padding: 40px;
+    text-align: center;
+}
+
+.about-creator .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-creator h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.about-creator p {
+    font-size: 1.2em;
+}
+
+
+
+
+.inspiration {
+    background-color: #000000;
+    padding: 40px;
+    text-align: center;
+}
+
+.inspiration .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.inspiration h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inspiration p {
+    font-size: 1.2em;
+}
+
+
+
+
+.contact-info {
+    background-color: #000000;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-info .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+}
+
+.contact-info a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+.socialmedia {
+    height: 10vh;
+    background-color: #3871ae;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    gap: 50px;
+    position: relative;
+    top: 0vh;
+}
+
+.icons .icon {
+    text-decoration: none;
+    color: #000000; /* Change this to your preferred color */
+    font-size: 40px;
+    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+}
+
+.icons .icon:hover {
+    color: #aeb5bd; /* Change this to your preferred hover color */
+}
+
+@media (max-width: 768px) {
+    .socialmedia {
+        height: auto;
+        padding: 10px;
+    }
+
 }
