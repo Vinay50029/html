@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Ensure consistent font rendering */
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mainheading{
+    height: 50vh;
+    width: 0vh;
+    position: relative;
+    left: 30vh;
+
+}
+
+.heading{
+    width: 100vh;
+    height: 40vh;
+    font-size: 10vh;
+    color: aliceblue;
+    position: relative;
+    right: 26.5vh;
+    bottom: 23vh;
+    animation: fadeInOut 55s infinite;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 1; }
+    0.05% { opacity: 1; } /* Remains visible at the start */
+    0.50% { opacity: 0; } /* Disappear at 0.50 seconds */
+    1.09% { opacity: 1; } /* Reappear at 1.09 seconds */
+    100% { opacity: 1; } /* Remains visible till the end */
+}

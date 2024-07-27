@@ -16,20 +16,22 @@ body{
 }
 
 .tabs {
-    height: 90px;
-    background-attachment: fixed;
-    background-color: #120238b7;
-}
-
-.tabs is-centered {
-    height: 118.5vh;
+    height: 15.5vh;
     width: auto;
+    position: absolute;
+    top: 1vh;
+    left: 80vh;
+    align-items: center;    
 }
 
+ul{
+    gap: 0.01vh;
+}
 
 .mainpic {
-    height: 118.5vh;
+    height: 108.5vh;
     width: auto;
+    align-items: center;
 }
 
 .pic {
