@@ -1,18 +1,20 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
 }
 
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif; /* Ensure consistent font rendering */
+    font-family: Arial, sans-serif;
+    /* Ensure consistent font rendering */
 }
 
 .tabs {
@@ -20,12 +22,20 @@ body{
     width: auto;
     position: absolute;
     top: 1vh;
-    left: 80vh;
-    align-items: center;    
+    left: 60vh;
+    align-items: center;
 }
 
-ul{
+ul {
     gap: 0.01vh;
+}
+
+.hd2 {
+    border-radius: 110%;
+}
+
+.hd3 {
+    border-radius: 35% 0 0 0;
 }
 
 .mainpic {
@@ -52,15 +62,12 @@ ul{
     color: white;
     text-align: center;
     background-attachment: fixed;
-    /*height: 100%;
-    width: 100%;
-    z-index: 1;*/
 
 }
 
 .logo {
     width: 60vh;
-    border: 1vh ;
+    border: 1vh;
     border-radius: 100%;
     z-index: 1;
     box-shadow: 3px 3px 3px rgb(122, 122, 198), -1px -1px 20px rgb(169, 103, 103);
@@ -92,7 +99,7 @@ ul{
     visibility: visible;
     opacity: 5;
     transition-delay: 1s;
-   
+
 }
 
 .logo-container .tooltip {
@@ -121,7 +128,7 @@ ul{
 
 .logo-container:hover .tooltip2 {
     visibility: visible;
-    opacity: 5;  
+    opacity: 5;
     transition-delay: 2s;
 }
 
@@ -136,14 +143,14 @@ ul{
     font-weight: 1;
     font-style: normal;
     font-size: 3vh;
-  }
+}
 
 
 
 .tooltip3 {
     visibility: hidden;
     width: 50vh;
-    height:1vh;
+    height: 1vh;
     color: #fff;
     background-color: #007bff;
     text-align: center;
@@ -160,7 +167,7 @@ ul{
 
 .logo-container:hover .tooltip3 {
     visibility: visible;
-    opacity: 5;  
+    opacity: 5;
     transition-delay: 3s;
 }
 
@@ -190,7 +197,7 @@ ul{
 
 .logo-container:hover .tooltip4 {
     visibility: visible;
-    opacity: 5;  
+    opacity: 5;
     transition-delay: 4s;
 }
 
@@ -199,6 +206,7 @@ ul{
     opacity: 0;
     transition-delay: 4s;
 }
+
 .bmwfont2 {
     font-family: "Playfair Display", serif;
     font-weight: 100;
@@ -226,7 +234,7 @@ ul{
 
 .mpic {
     width: 60vh;
-    border: 1vh ;
+    border: 1vh;
     border-radius: 15%;
     z-index: 1;
     box-shadow: 3px 3px 3px rgb(80, 80, 191), -2px -2px 30px rgb(153, 59, 59);
@@ -295,12 +303,13 @@ ul{
     opacity: 0;
     transition-delay: 2s;
 }
+
 .bmwfont {
     font-family: "Ga Maamli", sans-serif;
     font-weight: 0.1;
     font-style: normal;
     font-size: 3vh;
-  }
+}
 
 
 .text3 {
@@ -365,7 +374,7 @@ ul{
 
 
 .carinfo {
-    height: 120vh;
+    height: 155vh;
     width: auto;
     background-image: url('bmw back.jpg');
     background-size: cover;
@@ -387,25 +396,39 @@ ul{
     border-top: 0vh;
 }
 
-.section is-medium{
+.section is-medium {
     padding-right: 0px;
     padding-left: 0px;
     padding-top: 60px;
-    padding-bottom: 0px;  
+    padding-bottom: 0px;
 }
 
-/* {
-    box-sizing: border-box;
-}*/
+
+
+
+.slides img:hover {
+    transition: transform 1s ease;
+    /* Smooth transition */
+    transform: scale(0.9);
+    /* Zoom in the image */
+    z-index: 2;
+}
+
+
 .slideshow-container {
     position: relative;
     max-width: 1100px;
     margin: auto;
     overflow: hidden;
+    position: relative;
+    top: 2vh;
+    left: 1vh;
+
+
 }
 
 .carslides {
-    height: 100vh;
+    height: 107vh;
     padding-top: 4vh;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -424,12 +447,13 @@ ul{
     display: none;
     width: 280vh;
     height: 660px;
-    
 }
 
 .slideshow-container img {
     width: 55%;
     height: 660px;
+
+
 }
 
 .prev,
@@ -473,8 +497,9 @@ ul{
     height: 6vh;
     width: auto;
     position: relative;
-    bottom: 4.3vh;
-   right: 3.9vh;
+    bottom: 5vh;
+    right: 2vh;
+
 
 }
 
@@ -495,7 +520,67 @@ ul{
 
 }
 
+.slidesheading {
+    position: absolute;
+    top: 13px;
+    left: 11.5%;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #f7f7f7;
+    width: 35vh;
+    height: 10vh;
+    font-size: large;
+    opacity: 0.3;
+}
 
+.heading1 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 5vh;
+}
+
+.partsheading {
+    position: absolute;
+
+    left: 49.5%;
+    bottom: 50vh;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #f7f7f7;
+    width: 35vh;
+    height: 20vh;
+    font-size: large;
+    opacity: 1;
+    transition: opacity 2s, visibility 2s;
+}
+
+.heading2 {
+    font-size: 2.5em;
+    margin: 0;
+    font-weight: 10vh;
+}
+
+.wl:hover .heading2 {
+    visibility: hidden;
+    opacity: 0;
+    transition-delay: 1s;
+}
+
+.wl .heading2 {
+    visibility: visible;
+    opacity: 5;
+    transition-delay: 2s;
+}
+
+.partsofcar img {
+    transition: transform 0.5s ease-in-out;
+    z-index: 2;
+}
+
+.partsofcar img:hover {
+    transform: scale(0.9);
+    z-index: 10;
+}
 
 .partsofcar {
     height: 300vh;
@@ -516,19 +601,28 @@ ul{
 .headlight {
     height: 45vh;
     width: auto;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     bottom: 35vh;
     right: 9vh;
     z-index: 1;
-    border: 1px ;
+    border: 1px;
     padding: 20px;
     box-shadow: 18px 18px 18px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
-.hl,.wl,.bl,.eg,.pt,.ad,.it,.sm {
+
+.hl,
+.wl,
+.bl,
+.eg,
+.pt,
+.ad,
+.it,
+.sm {
     position: relative;
     display: inline-block;
 }
+
 .matter1 {
     visibility: hidden;
     width: 60vh;
@@ -544,13 +638,28 @@ ul{
     opacity: 0;
     transition: opacity 2s, visibility 2s;
 }
-.hl:hover .matter1, .wl:hover .matter2, .bl:hover .matter3, .eg:hover .matter4, .pt:hover .matter5, .ad:hover .matter8, .it:hover .matter7, .sm:hover .matter6{
+
+.hl:hover .matter1,
+.wl:hover .matter2,
+.bl:hover .matter3,
+.eg:hover .matter4,
+.pt:hover .matter5,
+.ad:hover .matter8,
+.it:hover .matter7,
+.sm:hover .matter6 {
     visibility: visible;
     opacity: 5;
     transition-delay: 1s;
 }
 
-.hl .matter1, .wl .matter2, .bl .matter3, .eg .matter4, .pt .matter5, .ad .matter8, .it .matter7, .sm .matter6 {
+.hl .matter1,
+.wl .matter2,
+.bl .matter3,
+.eg .matter4,
+.pt .matter5,
+.ad .matter8,
+.it .matter7,
+.sm .matter6 {
     visibility: hidden;
     opacity: 0;
     transition-delay: 1s;
@@ -559,13 +668,14 @@ ul{
 .wheel {
     height: 45vh;
     width: auto;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     top: 15vh;
     z-index: 1;
     padding: 10px;
     box-shadow: 20px 20px 20px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
+
 .matter2 {
     visibility: hidden;
     width: 55vh;
@@ -585,13 +695,14 @@ ul{
 .backlight {
     height: 45vh;
     width: auto;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     bottom: 34vh;
     left: 10vh;
     padding: 20px;
     box-shadow: 18px 18px 18px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
+
 .matter3 {
     visibility: hidden;
     width: 57vh;
@@ -611,13 +722,14 @@ ul{
 .engine {
     height: 45vh;
     width: 57vh;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     top: 54.5vh;
     right: 6.2vh;
     padding: 20px;
     box-shadow: 16px 16px 16px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
+
 .matter4 {
     visibility: hidden;
     width: 104vh;
@@ -628,7 +740,7 @@ ul{
     position: absolute;
     transform: translateX(90%);
     top: 103vh;
-    right: 53vh; 
+    right: 53vh;
     z-index: 2;
     opacity: 0;
     transition: opacity 2s, visibility 2s;
@@ -637,7 +749,7 @@ ul{
 .poster {
     height: 119vh;
     width: auto;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     top: 54vh;
     right: 0vh;
@@ -649,13 +761,14 @@ ul{
 .sidemirror {
     height: 45vh;
     width: 59vh;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     bottom: 94vh;
     right: 103vh;
     padding: 10px;
     box-shadow: 15px 15px 15px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
+
 .matter6 {
     visibility: hidden;
     width: 55vh;
@@ -665,7 +778,7 @@ ul{
     padding: 10px;
     position: absolute;
     transform: translateX(-184.7%);
-    bottom: 47vh; 
+    bottom: 47vh;
     z-index: 2;
     opacity: 0;
     transition: opacity 2s, visibility 2s;
@@ -675,18 +788,19 @@ ul{
 .interior {
     height: 45vh;
     width: 58vh;
-    border: 1vh ;
+    border: 1vh;
     position: relative;
     bottom: 94vh;
     left: 102vh;
     padding: 15px;
     box-shadow: 15px 15px 15px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
+
 .matter7 {
     visibility: hidden;
     width: 55vh;
     height: 48vh;
-    
+
     color: #fff;
     border-radius: 5px;
     padding: 10px;
@@ -699,15 +813,15 @@ ul{
 }
 
 
- .aerodynmics {   
+.aerodynmics {
     height: 44vh;
-    width: auto; 
-    border: 1vh ;
+    width: auto;
+    border: 1vh;
     position: relative;
     top: 54vh;
     left: 5.6vh;
     padding: 20px;
-    box-shadow: 16px 16px 16px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);  
+    box-shadow: 16px 16px 16px rgb(29, 26, 215), -1px -1px 20px rgb(242, 0, 0);
 }
 
 
@@ -715,6 +829,24 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.videoheading {
+    position: absolute;
+    transform: translateX(-50%);
+    z-index: 10;
+    color: #f7f7f7;
+    width: 95vh;
+    height: 20vh;
+    opacity: 0.5;
+}
+
+.heading3 {
+    font-size: 4.5em;
+    margin: 0;
+    font-weight: 10vh;
+    position: absolute;
+    bottom: 56vh;
 }
 
 
@@ -847,8 +979,9 @@ ul{
     border-right: 0vh;
 }
 
-.container p { 
+.container p {
     font-size: 16px;
+    padding-top: 7vh;
 }
 
 .container ul {
@@ -885,6 +1018,7 @@ ul{
     font-size: 2em;
     margin-bottom: 20px;
 }
+
 .about-creator p {
     font-size: 1.2em;
 }
@@ -966,13 +1100,16 @@ ul{
 
 .icons .icon {
     text-decoration: none;
-    color: #000000; /* Change this to your preferred color */
+    color: #000000;
+    /* Change this to your preferred color */
     font-size: 40px;
-    transition: color 0.3s ease; /* Add transition for smooth hover effect */
+    transition: color 0.3s ease;
+    /* Add transition for smooth hover effect */
 }
 
 .icons .icon:hover {
-    color: #aeb5bd; /* Change this to your preferred hover color */
+    color: #aeb5bd;
+    /* Change this to your preferred hover color */
 }
 
 @media (max-width: 768px) {
@@ -981,4 +1118,29 @@ ul{
         padding: 10px;
     }
 
+}
+
+.scroll-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.scroll-up i {
+    font-size: 24px;
+}
+
+.scroll-up:hover {
+    background-color: #077efc;
 }

@@ -15,6 +15,37 @@ body{
     font-family: Arial, sans-serif; /* Ensure consistent font rendering */
 }
 
+
+.tabs {
+    height: 15.5vh;
+    width: auto;
+    position: absolute;
+    top: 1vh;
+    left: 80vh;
+    align-items: center;    
+}
+
+ul{
+    gap: 0.01vh;
+}
+
+.hd2{
+    border-radius: 110%;
+}
+.hd3{
+    border-radius: 35% 0 0 0;
+}
+
+.mainpic {
+    height: 112.5vh;
+    width: auto;
+    align-items: center;
+}
+
+.pic {
+    width: 300vh;
+}
+
 .video {
     display: flex;
     justify-content: center;
@@ -23,28 +54,92 @@ body{
 }
 
 .mainheading{
-    height: 50vh;
+    height: 60vh;
     width: 0vh;
     position: relative;
-    left: 30vh;
+    left: 33vh;
 
 }
 
 .heading{
-    width: 100vh;
-    height: 40vh;
-    font-size: 10vh;
+    width: 190vh;
+    height: 10vh;
+    font-size: 12vh;
     color: aliceblue;
     position: relative;
-    right: 26.5vh;
+    right: 19.5vh;
     bottom: 23vh;
-    animation: fadeInOut 55s infinite;
+    opacity: 0.5;
 }
 
-@keyframes fadeInOut {
-    0% { opacity: 1; }
-    0.05% { opacity: 1; } /* Remains visible at the start */
-    0.50% { opacity: 0; } /* Disappear at 0.50 seconds */
-    1.09% { opacity: 1; } /* Reappear at 1.09 seconds */
-    100% { opacity: 1; } /* Remains visible till the end */
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css";
+
+.form{
+    height: 130vh;
+    background-image: url("login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.field{
+    width: 90vh;
+    position: relative;
+    top: 7vh;
+}
+
+.textarea{
+    border: solid white;
+}
+.button{
+    position: relative;
+    left: 30vh;
+}
+
+.end {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+
+    text-align: center;
+    border-color: #1a1818;
+    border-bottom: 0vh;
+    border-left: 0vh;
+    border-right: 0vh;
+}
+
+.container p { 
+    font-size: 16px;
+    padding-top: 7vh;
+
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 10px 0 0 0;
+}
+
+.container ul li {
+    display: inline;
+}
+
+.container ul li a {
+    text-decoration: none;
+    font-size: 14px;
 }
