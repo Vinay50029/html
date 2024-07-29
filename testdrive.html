@@ -145,7 +145,7 @@
 
        <script>
          //below script will not allow to inspect
-         
+
        document.addEventListener('contextmenu', function(e) {
         e.preventDefault();
       });
@@ -172,6 +172,18 @@
     
     loadStylesheet('styles.min.css');
     loadScript('scripts.min.js');
+
+
+    
+   // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, etc.
+document.addEventListener('keydown', function(event) {
+  if (event.keyCode === 123 || 
+      (event.ctrlKey && event.shiftKey && event.keyCode === 73) || 
+      (event.ctrlKey && event.shiftKey && event.keyCode === 74) || 
+      (event.ctrlKey && event.keyCode === 85)) {
+      event.preventDefault();
+  }
+});
     </script>
 </body>
 </html>

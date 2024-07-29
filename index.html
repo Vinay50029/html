@@ -21,6 +21,8 @@
         href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self';">
+
 </head>
 
 <body>
@@ -438,6 +440,19 @@
         
         loadStylesheet('styles.min.css');
         loadScript('scripts.min.js');
+
+
+
+
+        // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, etc.
+document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 123 || 
+        (event.ctrlKey && event.shiftKey && event.keyCode === 73) || 
+        (event.ctrlKey && event.shiftKey && event.keyCode === 74) || 
+        (event.ctrlKey && event.keyCode === 85)) {
+        event.preventDefault();
+    }
+});
       </script>
       
 </body>
