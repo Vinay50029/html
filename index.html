@@ -194,34 +194,7 @@
     </section>
 
 
-    <script>
-        let slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("slides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
+    
 
     <section class="partsofcar">
 
@@ -335,12 +308,6 @@
         </div>
     </section>
 
-    <script>
-        document.getElementById('directions-button').addEventListener('click', function () {
-            window.open('https://www.google.com/maps/dir/?api=1&destination=BMW+KUN+Exclusive+in+Hyderabad', '_blank');
-        });
-    </script>
-
     </section>
 
     <section class="about-creator">
@@ -391,7 +358,37 @@
     <a href="#mainpic" class="scroll-up" id="scroll-up">
         <i class="fas fa-arrow-up"></i>
     </a>
+
+
     <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+
+
         const scrollUpButton = document.getElementById('scroll-up');
 
         window.addEventListener('scroll', () => {
@@ -409,6 +406,12 @@
                 behavior: 'smooth'
             });
         });
+
+
+        document.getElementById('directions-button').addEventListener('click', function () {
+            window.open('https://www.google.com/maps/dir/?api=1&destination=BMW+KUN+Exclusive+in+Hyderabad', '_blank');
+        });
+
 
        // below script will not allow to inspect
 
@@ -439,8 +442,6 @@
         
         loadStylesheet('styles.min.css');
         loadScript('scripts.min.js');
-
-
 
 
         // Disable F12, Ctrl+Shift+I, Ctrl+Shift+J, Ctrl+U, etc.
