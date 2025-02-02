@@ -1,148 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
-    <link
-     rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css"
-    >
-    <title>driving experience</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.1/css/bulma.min.css">
+  <title>driving experience</title>
+ 
 </head>
+
 <body>
   <section class="mainpic">
     <div>
-        <div class="tabs is-medium">
-            <ul>
-                <li><a href="index.html" target="_blank"><button><strong>HOME</strong></button></a></li>
-                
-                <li><a href="index.html"><button><strong>CONTACT US</strong></button></a></li>
-                <li><a href="https://www.bmw.in/en/index.html" target="_blank"><button><img height="75" width="75" class="hd2" src="headinglogo3.png" alt="hd2"></button></a></li>
-                <li><a href="https://www.bmw-m.com/en/topics/magazine-article-pool/die-geschichte-des-bmw-m-logos.html" target="_blank"><button><img height="90" width="90" class="hd3" src="headinglogo4.png" alt="hd3"></button></a></li>
-            </ul>
-        </div>
-        <img class="pic" src="loginfirst.jpg" alt="begginer">
+      <div class="tabs is-medium">
+        <ul>
+          <li><a href="index.html" target="_blank"><button><strong>HOME</strong></button></a></li>
+
+          <li><a href="index.html"><button><strong>CONTACT US</strong></button></a></li>
+          <li><a href="https://www.bmw.in/en/index.html" target="_blank"><button><img height="75" width="75" class="hd2"
+                  src="headinglogo3.png" alt="hd2"></button></a></li>
+          <li><a href="https://www.bmw-m.com/en/topics/magazine-article-pool/die-geschichte-des-bmw-m-logos.html"
+              target="_blank"><button><img height="90" width="90" class="hd3" src="headinglogo4.png"
+                  alt="hd3"></button></a></li>
+        </ul>
+      </div>
+      <img class="pic" src="loginfirst.jpg" alt="begginer">
     </div>
-</section>
+  </section>
 
-        <section class="video">
-            <div class="mainheading"><h1 class="heading">THE BMW M DRIVING EXPERIENCE</h1></div>
-            <iframe id="bmw-video" height="855" width="1790" src="https://bmw.scene7.com/is/content/BMW/BMW_M_Driving_Experience_Angebot_V1?autoplay=1&loop=1&muted=1" frameborder="0"  allow="autoplay;loop"></iframe>
-        </section>
-        
-        <section class="form">
-            <div class="field">
-                <label class="label">Name</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-white" type="text" placeholder="USER NAME">
-                </div>
-              </div>
-              
-              <div class="field">
-                <label class="label">Phone</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-white" type="number" placeholder="PHONE NUMBER">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                  </span>
-                </div>
-                <!-- <p class="help is-success">This is available</p> -->
-              </div>
-              
-              <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-white" type="email" placeholder="Email input" value="@gmail.com">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                  </span>
-                </div>
-                <!-- <p class="help is-danger">This email is valid</p> -->
-              </div>
-              
-              <div class="field">
-                <label class="label">driving licence </label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-white" type="email" placeholder="ID" >
-                  <span class="icon is-small is-left">
-                  </span>
-                  <span class="icon is-small is-right">
-                  </span>
-                </div>
-                <!-- <p class="help is-danger">This email is valid</p> -->
-              </div>
+  <section class="video">
+    <div class="mainheading">
+      <h1 class="heading">THE BMW M DRIVING EXPERIENCE</h1>
+    </div>
+    <iframe id="bmw-video" height="855" width="1790"
+      src="https://bmw.scene7.com/is/content/BMW/BMW_M_Driving_Experience_Angebot_V1?autoplay=1&loop=1&muted=1"
+      frameborder="0" allow="autoplay;loop"></iframe>
+  </section>
 
-              <div class="field">
-                <label class="label">aadhaar number </label>
-                <div class="control has-icons-left has-icons-right">
-                  <input class="input is-white" type="number" placeholder="____ ____ ____">
-                  <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                  </span>
-                  <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                  </span>
-                </div>
-                <!-- <p class="help is-success">This is available</p> -->
-              </div>
+  <section class="form">
+    <form onsubmit="sendmail(event)">
 
-              <div class="field">
-                <label class="label">gender</label>
-                <div class="control">
-                  <div class="select is-white">
-                    <select>
-                      <option>male</option>
-                      <option>female</option>
-                      <option>other</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              
-              <div class="field">
-                <label class="label"> address</label>
-                <div class="control">
-                  <textarea class="textarea is-white" placeholder="house no.,area,street no.,district,state." rows="2"></textarea>
-                </div>
-              </div>
-              
-              <div class="field">
-                <div class="control">
-                  <label class="checkbox">
-                    <input type="checkbox">
-                    I agree to the <a href="#">terms and conditions</a>
-                  </label>
-                </div>
-              </div>
-              
-              
-              <div class="field is-grouped">
-                <div class="control ">
-                  <button class="button is-link ">Submit</button>
-                </div>
-                <div class="control">
-                  <button class="button is-link">Cancel</button>
-                </div>
-              </div>
-        </section>
 
-        <section class="end">
-            <div class="container">
-                <p>&copy; 2024 Luxury and Performance: The Legacy of BMW Group</p>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Service</a></li>
-                </ul>
-            </div>
-       </section>
+      <div class="field">
+        <!-- <label class="label">Name</label> -->
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-white" id="name" type="text" placeholder="USER NAME" required>
+        </div>
+      </div>
 
-       
+      <div class="field">
+        <!-- <label class="label">Phone</label> -->
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-white" id="phone" type="text" value="+91 " placeholder="PHONE NUMBER"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="12" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <!-- <p class="help is-success">This is available</p> -->
+      </div>
+
+      <div class="field">
+        <!-- <label class="label">Email</label> -->
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-white" id="email" type="email" placeholder="Gmail" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <!-- <p class="help is-danger">This email is valid</p> -->
+      </div>
+
+      <div class="field">
+        <!-- <label class="label">driving licence </label> -->
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-white" id="driving" type="text" placeholder=" driving licence " maxlength="16"
+            required>
+          <span class="icon is-small is-left">
+          </span>
+          <span class="icon is-small is-right">
+          </span>
+        </div>
+        <!-- <p class="help is-danger">This email is valid</p> -->
+      </div>
+
+      <div class="field">
+        <!-- <label class="label">aadhaar number </label> -->
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-white" id="aadhaar" type="number" placeholder="aadhaar number last four digits"
+            id="aadhaar-input" maxlength="14" required>
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fas fa-check"></i>
+          </span>
+        </div>
+        <!-- <p class="help is-success">This is available</p> -->
+      </div>
+
+      <div class="field">
+        <!-- <label class="label">gender</label> -->
+        <div class="control">
+          <div class="select is-white">
+            <select required>
+              <option value="" disabled selected>Gender</option>
+              <option>male</option>
+              <option>female</option>
+              <option>other</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="field">
+        <!-- <label class="label"> address</label> -->
+        <div class="control">
+          <textarea class="textarea is-white" placeholder="  address : house no.,area,street no.,district,state."
+            rows="2" required></textarea>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="date">Select a Date for test drive</label>
+        <div class="control">
+          <input class="input is-white" id="date" type="date" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="time">Select time for test drive</label>
+        <div class="control">
+          <input class="input is-white" id="time" type="time" required min="10:00" max="18:00">
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control ">
+          <button class="button is-link " type="submit">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link" type="reset">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </section>
+
+  <section class="end">
+    <div class="container">
+      <p>&copy; 2024 Luxury and Performance: The Legacy of BMW Group</p>
+      <ul>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </div>
+  </section>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("-w99EAqDYpHniMTFQ");
+    })();
+  
+    function sendmail(event){
+      event.preventDefault();
+
+      let param = {
+        name: document.getElementById('name').value,
+        phone: document.getElementById('phone').value,
+        email: document.getElementById('email').value,
+        driving: document.getElementById('driving').value,
+        aadhaar: document.getElementById('aadhaar').value,
+        date: document.getElementById('date').value,
+        time: document.getElementById('time').value
+      };
+  
+      emailjs.send("service_m43s31v", "template_jdbu24g", param)
+        .then(function(response) {
+          console.log("Email sent successfully!", response);
+          alert("Email sent successfully!");
+        }, function(error) {
+          console.log("FAILED...", error);
+          alert("Failed to send email. Check console.");
+        });
+    }
+  </script>
+  
+
 </body>
+
 </html>
